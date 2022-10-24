@@ -18,7 +18,9 @@ public class Main {
         Dog dog = new Dog();
         dog.hunt();
         dog.bark();
-        Animal animal1 = new Dog();
+        Animal animal1 = new Dog(); //создан объект класса Дог
+        animal1.eat();  //собака кушает, птмч О класса Дог
+
 
 
     }
