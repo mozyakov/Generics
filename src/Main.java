@@ -14,6 +14,12 @@ public class Main {
         Random random1 = new Random();
         int randomInt = random1.nextInt(5);
 
+        //Animal animal = new Animal();
+        Dog dog = new Dog();
+        dog.hunt();
+        dog.bark();
+        Animal animal1 = new Dog();
+
 
     }
 }
