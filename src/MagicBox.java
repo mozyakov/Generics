@@ -1,10 +1,14 @@
+import java.util.*;
 
 public class MagicBox<T> {
     private T item;
-
     public MagicBox() {
-        T[] items = (T[]) new Object[3];
+        MagicBox[] T = new MagicBox[3];
     }
+
+    /*public MagicBox() {
+        T[] items = (T[]) new Object[3];
+    }*/
 
     public void putItem(T item) { //параметр метода типа T
         this.item = item;
@@ -21,5 +25,6 @@ public class MagicBox<T> {
         return item;
     }
 
-//public Account[] accounts = new Account[3];
+
+    //public Account[] accounts = new Account[3];
 }
