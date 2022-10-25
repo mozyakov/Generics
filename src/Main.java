@@ -1,5 +1,5 @@
-import java.util.Random;
-import java.util.ArrayList;
+import java.util.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,25 @@ public class Main {
         dog.hunt();
         dog.bark();
         Animal animal1 = new Dog(); //создан объект класса Дог
-        animal1.eat();  //собака кушает, птмч О класса Дог
+        animal1.eat();  //собака кушает, птмч Оbj класса Дог
+        System.out.println(list);
+        System.out.println("==================");
+        /*LinkedList list2 = new LinkedList<>();
+        for (Object o : list) {
+            list2.add(o);
+            list2 = new LinkedList<>(list);
+        }
+        System.out.println(list2);
+         */
+
+        //List<Integer> list1 = new ArrayList<>();
+        LinkedList list2 = new LinkedList<>();
+        for (int i=0; i < list.size(); i++) {
+            list2.add(i);
+            list2 = new LinkedList<>(list);
+        }
+
+        System.out.println(list2);
 
 
 
