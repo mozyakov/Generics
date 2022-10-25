@@ -14,12 +14,6 @@ public class Main {
         Random random1 = new Random();
         int randomInt = random1.nextInt(5);
 
-        //Animal animal = new Animal();
-        Dog dog = new Dog();
-        dog.hunt();
-        dog.bark();
-        Animal animal1 = new Dog(); //создан объект класса Дог
-        animal1.eat();  //собака кушает, птмч Оbj класса Дог
         System.out.println(list);
         System.out.println("==================");
         /*LinkedList list2 = new LinkedList<>();
