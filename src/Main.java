@@ -15,15 +15,16 @@ public class Main {
 
         MagicBox<String> boxStrok2 = new MagicBox<>();
         boxStrok2.add("Second");
+        System.out.println(boxStrok2 + " :в бокс успешно добавлена строка Second");
         System.out.println("демонстрация boxStrok2 завершена ====================");
         System.out.println();
 
         MagicBox<Integer> boxInter1 = new MagicBox<>();
         System.out.println("проверка содержимого, д.б. null " + boxInter1);
-        System.out.println(boxInter1.add(1) + " :успешно положили в бокс цифру 1");
+        System.out.println(boxInter1.add(100) + " :успешно положили в бокс цифру 1");
         System.out.println(boxInter1);
-        System.out.println(boxInter1.add(200) + " :200 не положилось, потому что бокс уже содержал 1"); //изменения не будет
-        System.out.println(boxInter1 + " :осталось 1 как и должно быть"); //подтверждение что изменения нет
+        System.out.println(boxInter1.add(200) + " :200 не положилось, потому что бокс уже содержал 100"); //изменения не будет
+        System.out.println(boxInter1 + " :осталось 100 как и должно быть"); //подтверждение что изменения нет
         System.out.println("демонстрация boxInter1 завершена ====================");
         System.out.println();
 
