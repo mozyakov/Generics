@@ -1,12 +1,11 @@
 public class MagicBox<T> {
     private T value;
-    //private int countItems = 0;
-    //private int maxCountItems = 1;
-    public MagicBox() {} //конструктор по умолчанию
-    public MagicBox(T value) {
+    private int count = 0; //это показатель что коробка пустая, с null T value не получался boolean add
+    public MagicBox() {} //конструктор оставил только такой
+    /*public MagicBox(T value) {
         this.value = value;
-        //this.countItems = countItems;
-    }
+        this.count = count = 1;
+    }*/
 
     /*public MagicBox() {
         MagicBox[] savedArray  = new MagicBox[3] ;
@@ -20,25 +19,23 @@ public class MagicBox<T> {
         this.value = value;
     }
 
-        public boolean add(T value ) { //это резерв
-        if(value != null)
+    public boolean add(T value) {
+        if (count == 0) {  //значит бокс пустой
             this.value = value;
+            count += 1;  //для запрета дальнейших попыток положить в бокс
             return true;
+        } else {
+            return false;
         }
-        /*public boolean add(T value ) { //это резерв
-        if(value == null) {
-            this.value = value;
-            return true;
-        }
-        return false;
-    }*/
+    }
+
     public T getValue() { // возвращает объект типа T
         return value;
     }
-
     @Override
     public String toString() {
         return "Содержимое коробки = "  + value;
     }
     //public Account[] accounts = new Account[3];
 }
+
