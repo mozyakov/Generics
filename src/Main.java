@@ -10,18 +10,22 @@ public class Main {
         //System.out.println("проверка содержимого, д.б. First " + boxStrok1);
         System.out.println(boxStrok1.add("what") + " :false потому что бокс не пустой");
         System.out.println(boxStrok1);
-        System.out.println("Блок boxStrok1 завершен ====================");
+        System.out.println("демонстрация boxStrok1 завершена ====================");
+        System.out.println();
 
         MagicBox<String> boxStrok2 = new MagicBox<>();
         boxStrok2.add("Second");
-        System.out.println("Блок boxStrok2 завершен ====================");
+        System.out.println("демонстрация boxStrok2 завершена ====================");
+        System.out.println();
 
         MagicBox<Integer> boxInter1 = new MagicBox<>();
         System.out.println("проверка содержимого, д.б. null " + boxInter1);
-        System.out.println(boxInter1.add(1));
+        System.out.println(boxInter1.add(1) + " :успешно положили в бокс цифру 1");
         System.out.println(boxInter1);
-        System.out.println(boxInter1.add(200) + " :200 не стало, потому что бокс уже содержал 1"); //изменения не будет
+        System.out.println(boxInter1.add(200) + " :200 не положилось, потому что бокс уже содержал 1"); //изменения не будет
         System.out.println(boxInter1 + " :осталось 1 как и должно быть"); //подтверждение что изменения нет
+        System.out.println("демонстрация boxInter1 завершена ====================");
+        System.out.println();
 
 
     }
