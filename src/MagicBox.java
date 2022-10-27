@@ -1,5 +1,6 @@
-import java.util.Arrays;
-import java.util.Random;
+//import java.util.Arrays;
+//import java.util.Random;
+import java.util.*;
 
 public class MagicBox<T> {
     protected T[] item;
@@ -35,17 +36,18 @@ public class MagicBox<T> {
             System.out.println(Arrays.toString(item));
         //return item;
     }
-}
-
-    /*public <T> T pick() throws RuntimeException {
+    public <T> int pick() throws RuntimeException {
         for(int i =0; i < item.length; i++) {
             if(item[i] == null) {
-                throw new RuntimeException("ящик не полон, можно заполнить " + item.length + " ячеек");
+                throw new RuntimeException("ящик не полон, нужно заполнить " + (item.length-i) + " ячеек");
             }
         }
         Random random = new Random();
-        int randomInt = random.nextInt()(item.length);
-        return randomInt;
-    }*/
+        int randomInt = random.nextInt((item.length));
+        return  randomInt;
+    }
+}
+
+
 //public Account[] accounts = new Account[3];
 
