@@ -19,14 +19,14 @@ public class MagicBox<T> {
         T[] arrayItems = (T[]) new Object[3];
     }*/
 
-    /*public void putValue(T[] item) { //параметр метода типа T
+    public void putValue(T[] item) { //параметр метода типа T
         //int i[] = ;
         this.item = item ;
-    }*/
+    }
 
     public boolean add(T value) { //void add(Account account)
         for (int i = 0; i < item.length; i++) { //for (int i = 0; i < accounts.length; i++) {
-            if (item == null) {  //значит бокс пустой  if (accounts[i] == null) {
+            if (item[i] == null) {  //значит бокс пустой  if (accounts[i] == null) {
                 item[i] =  value ;  //accounts[i] = account;
                 //macCount += 1;  //для запрета дальнейших попыток положить в бокс
                 return true;
