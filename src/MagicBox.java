@@ -1,4 +1,3 @@
-import java.util.*;
 public class MagicBox<T> {
     protected T[] item;
     //private int count = 0; //это показатель что коробка пустая, с null T value не получался boolean add
@@ -15,9 +14,9 @@ public class MagicBox<T> {
         T[] arrayItems = (T[]) new Object[3];
     }*/
 
-    /*public void putItem(T item) { //параметр метода типа T
-        this.value = value;
-    }*/
+    public void putValue(T[] item) { //параметр метода типа T
+        this.item = item;
+    }
 
     /*public boolean add(T items) {
         if (T[] items == null) {  //значит бокс пустой
@@ -28,14 +27,16 @@ public class MagicBox<T> {
             return false;
         }
     }*/
-
+    public void showBox() { //показ элементов ящика
+        for(T i : item ) {
+            System.out.print(i + " ");
+        }
+    }
     public T[] getItem() { // возвращает объект типа T
         return item;
     }
-    @Override
-    public String toString() {
-        return "Содержимое коробки = "  + item;
-    }
+
+
     //public Account[] accounts = new Account[3];
 }
 
