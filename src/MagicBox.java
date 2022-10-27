@@ -1,6 +1,7 @@
 public class MagicBox<T> {
     private T value;
     private int count = 0; //это показатель что коробка пустая, с null T value не получался boolean add
+    private final int countMax = 1; //кол-во объектов которое можно положить в него
     public MagicBox() {} //конструктор оставил только такой
     /*public MagicBox(T value) {
         this.value = value;
